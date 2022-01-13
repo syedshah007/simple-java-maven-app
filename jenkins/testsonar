@@ -1,6 +1,6 @@
 node {
   stage('Clone the Git') {
-    git 'https://github.com/syedshah007/simple-java-maven-app/blob/master'
+    git 'https://github.com/syedshah007/simple-java-maven-app.git'
   }
   stage('SonarQube analysis') {
     def scannerHome = tool 'sonarqube';
